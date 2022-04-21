@@ -19,10 +19,12 @@ Short-time Fourier transform spectrogram
 Mel spectrogram  
 ![mel-spectrogram](img/mel-spectrogram.jpg)
 
+Because spectrograms are images, convolutional layers can be used to extract features from them. Additionally speech is time-series data, so it is beneficial to use bidirectional RNN layers such as gated recurrent units (GRU) to capture time-frequency patterns from the features detected by the convolutional layers.
+
 For the training I used Google Colab Pro+ and sometimes a GPU with 40GB RAM got connected (A100-SXM4-40GB). In this case I was able to train with a batch size of 64. In most cases a Tesla V100-SXM2-16GB got connected, so the batch size could not be higher than 32. Usually the connection broke after several hours of training and had to be restarted. Overall the model trained about 60 epochs until early stopping was triggert.
 
 As the model is trained on read speech, it does not perform as good on spontaneous speech or  especially singing. To improve the robustness of the speech recognition, data with spontaneous speech could be added or the current dataset could be augmented by the addition of noise, changes of speed and [spectrum-augmentation](https://arxiv.org/abs/1904.08779).
-The word error rate (WER) when predicting the validation data (LibriSpeech clean-test) is at 13%. Improvements could be made with the use of a language model like [KenLM](https://kheafield.com/code/kenlm/) and beam-search at decoder-level.
+The word error rate (WER) when predicting the validation data (LibriSpeech clean-test) is at 13%. Improvements could be made with the use of a language model like [KenLM](https://kheafield.com/code/kenlm/) as a scorer in a beam-search at decoder-level.
 
 ![Decoder](./img/RNN%2BCTC.drawio.svg)
 
