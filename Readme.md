@@ -34,8 +34,7 @@ For the [training](https://colab.research.google.com/github/to-schi/speech-recog
 As the model is trained on read speech, it does not perform as good on spontaneous speech or  especially singing. To improve the robustness of the speech recognition, data with spontaneous speech could be added or the current dataset could be augmented by the addition of noise, changes of speed and [spectrum-augmentation](https://arxiv.org/abs/1904.08779).
 The word error rate (WER) when predicting the validation data (LibriSpeech clean-test) is at 14%. Improvements could be made with the use of a language model like [KenLM](https://kheafield.com/code/kenlm/) as a scorer in a beam-search at decoder-level.
 
-Plans for the future:
+### Future plans:
 - Implement a language model at decoder level
 - Change the network's architecture from RNN to transformer
 - Prune the keras model data to a smaller size
-
