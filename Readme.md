@@ -36,5 +36,5 @@ The word error rate (WER) when predicting the validation data (LibriSpeech clean
 
 ### Future plans:
 - Implement a language model at decoder level
-- Change the network's architecture from RNN to transformer
+- Change the network's architecture from RNN to [Transformer](https://arxiv.org/abs/1706.03762)
 - Prune the keras model data to a smaller size
