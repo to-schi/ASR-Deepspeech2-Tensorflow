@@ -37,7 +37,5 @@ The word error rate (WER) when predicting the validation data (LibriSpeech clean
 Plans for the future:
 - Implement a language model at decoder level
 - Change the network's architecture from RNN to transformer
-- Prune the keras model to a smaller size
+- Prune the keras model data to a smaller size
 
-
-This project was started during the [Spiced Academy](https://www.spiced-academy.com) Data Science Bootcamp Nov/2021.
