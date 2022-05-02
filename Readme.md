@@ -1,6 +1,5 @@
-[![StreamlitCloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/to-schi/asr-deepspeech2-webdemo/main)
-
 # Simple End-to-end Speech Recognition Engine from Scratch
+[![StreamlitCloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/to-schi/asr-deepspeech2-webdemo/main)
 
 The engine's architecture is similar to [Deepspeech2](https://arxiv.org/abs/1512.02595) and includes a conversion of audio data to mel spectrograms, char-tokenization of the transcription, a tensorflow input pipeline, a recurrent neural network (RNN) and CTC-loss/decoder-functions.
 A [demo-app](https://github.com/to-schi/asr-deepspeech2-webdemo) of the speech recognition has been deployed on [StreamlitCloud](https://share.streamlit.io/to-schi/asr-deepspeech2-webdemo/main).
