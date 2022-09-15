@@ -1,4 +1,4 @@
-# Simple End-to-end Speech Recognition Engine from Scratch
+# End-to-end Speech Recognition using the Deepspeech2 Architecture implemented with Tensorflow
 [![StreamlitCloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/to-schi/asr-deepspeech2-webdemo/main)
 
 #
